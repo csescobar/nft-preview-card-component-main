@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif; 
+}
+
+body {
+   background: hsl(217, 54%, 11%); 
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 1rem;
+}
+
+main {
+    background: hsl(216, 50%, 16%); 
+    max-width: 300px;  
+    border-radius: 1rem; 
+}
+
+main section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 1.5rem;
+    height: 100%;
+    width: 100%;
+}
+
+main .hover-image {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin: auto;
+}
+
+main .hover-image .equilibrium {
+    width: 100%;
+    border-radius: 2.4rem;
+    padding: 1.5rem;
+}
+
+.hover-image .background-icon {
+    background: hsl(178, 100%, 50%);
+    width: 84%;
+    height: 83%;
+    border-radius: 0.8rem;
+    padding: 1.5rem;
+    margin: 1.5rem;
+    position: absolute;
+    display: block;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+}
+.hover-image .hover-view {
+    position: absolute;
+    left: 43%;
+    top: 43%;
+    width: 16%;
+}
+
+.hover-image:hover .background-icon {
+    opacity: 0.6;
+    visibility: visible;
+  }
+
+/* main .image-equilibrium {
+    width: 100%;
+    border-radius: 2rem;
+    padding: 1.5rem;
+    
+} */
+
+main #equilibrium-link {
+    font-weight: 400;
+    font-size: 18px;
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    text-align: left;
+    padding: 1.5rem;
+    transition: color 0.3s;
+}
+
+main #equilibrium-link:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+main section .description {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    font-size: 14px;
+    padding-top: 1rem;
+}
+
+
+
+main .informations {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 1.5rem;
+}
+
+main .informations .price {
+    display: flex;
+    align-items: center;
+}
+
+main .informations .days-left {
+    display: flex;
+    align-items: center;
+}
+
+main .informations #ethereum {
+    width: 10px;
+}
+
+main .informations #clock {
+    width: 15px;
+}
+
+main .informations strong {
+    color: hsl(178, 100%, 50%);
+    padding-left: 0.5rem;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+main .informations span {
+    font-size: 12px;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    padding-left: 0.5rem;
+}
+
+main section hr {
+    width: 100%;
+    background-color: hsl(215, 32%, 27%);
+    border: none;
+    height: 1px;
+    margin-top: 1rem;
+}
+
+main .created-by {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 1rem 0 1rem 1.5rem;
+}
+
+main #avatar {
+    width: 24px;
+    border-radius: 50%;
+    border: 1px solid #FFF;
+}
+
+main .created-by span {
+    color: hsl(215, 51%, 70%);
+    font-size: 12px;
+    padding-left: 0.5rem;
+}
+
+main .created-by a {
+    font-size: 12px;
+    font-weight: 300;
+    color: hsl(0, 0%, 100%);
+    padding-left: 0.2rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+main .created-by a:hover {
+    color: hsl(178, 100%, 50%);
+}
